@@ -15,10 +15,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
-            android:text="Описание"
+            android:text="Куда получать деньги?"
             android:textColor="#6D7885"
             app:layout_constraintBottom_toTopOf="@+id/view9"
             app:layout_constraintStart_toStartOf="@+id/view9" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Автор"
+            android:textColor="#6D7885"
+            app:layout_constraintBottom_toTopOf="@+id/view10"
+            app:layout_constraintStart_toStartOf="@+id/view10" />
 
         <TextView
             android:id="@+id/textView12"
@@ -30,66 +40,130 @@
             app:layout_constraintBottom_toTopOf="@+id/view8"
             app:layout_constraintStart_toStartOf="@+id/view8" />
 
-        <View
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/view7"
-            android:layout_width="351dp"
-            android:layout_height="37dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="62dp"
+            android:layout_marginEnd="12dp"
             android:background="@drawable/gray_view"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view4" />
+            app:layout_constraintTop_toBottomOf="@+id/view4">
 
-        <View
+            <EditText
+                android:id="@+id/editTextTextPersonName6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Например, поддержка приюта"
+                android:textAlignment="viewStart"
+                android:textColorHint="#818C99"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/view8"
-            android:layout_width="351dp"
-            android:layout_height="64dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="62dp"
+            android:layout_marginEnd="12dp"
             android:background="@drawable/gray_view"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view7" />
+            app:layout_constraintTop_toBottomOf="@+id/view7">
+
+            <EditText
+                android:id="@+id/editTextDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@null"
+                android:ems="10"
+                android:hint="На что пойдут деньги и как они кому-то помогут?"
+                android:inputType="textMultiLine"
+                android:minLines="2"
+                android:textAlignment="viewStart"
+                android:textColorHint="#818C99"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <View
             android:id="@+id/view9"
-            android:layout_width="351dp"
-            android:layout_height="64dp"
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="62dp"
+            android:layout_marginEnd="12dp"
             android:background="@drawable/gray_view"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view8" />
 
         <View
-            android:id="@+id/view4"
-            android:layout_width="351dp"
+            android:id="@+id/view10"
+            android:layout_width="0dp"
             android:layout_height="37dp"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="62dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/gray_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view9" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/view4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="62dp"
+            android:layout_marginEnd="12dp"
             android:background="@drawable/gray_view"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view" />
+            app:layout_constraintTop_toBottomOf="@+id/view">
 
-        <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="12dp"
-            android:layout_marginBottom="12dp"
-            android:background="@null"
-            android:ems="10"
-            android:hint="Сколько нужно в месяц?"
-            android:textAlignment="viewStart"
-            android:textColorHint="#818C99"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@+id/view4"
-            app:layout_constraintEnd_toEndOf="@+id/view4"
-            app:layout_constraintStart_toStartOf="@+id/view4"
-            app:layout_constraintTop_toTopOf="@+id/view4" />
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Сколько нужно в месяц?"
+                android:inputType="number"
+                android:textAlignment="viewStart"
+                android:textColorHint="#818C99"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
             android:id="@+id/textView6"
@@ -145,36 +219,49 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/charityTypeHeader" />
 
-        <View
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/view"
-            android:layout_width="351dp"
-            android:layout_height="37dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="62dp"
+            android:layout_marginEnd="12dp"
             android:background="@drawable/gray_view"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/separator2"
-            app:layout_constraintVertical_chainStyle="packed" />
+            app:layout_constraintVertical_chainStyle="packed">
 
-        <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="0dp"
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Название сбора"
+                android:textAlignment="viewStart"
+                android:textColorHint="#818C99"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="12dp"
-            android:layout_marginBottom="12dp"
-            android:background="@null"
-            android:ems="10"
-            android:hint="Название сбора"
-            android:textAlignment="viewStart"
-            android:textColorHint="#818C99"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@+id/view"
-            app:layout_constraintEnd_toEndOf="@+id/view"
-            app:layout_constraintStart_toStartOf="@+id/view"
-            app:layout_constraintTop_toTopOf="@+id/view" />
+            android:layout_marginEnd="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view10"
+            app:layout_constraintEnd_toEndOf="@+id/view10"
+            app:layout_constraintTop_toTopOf="@+id/view10"
+            app:srcCompat="@drawable/ic_arrow_bottom" />
 
         <TextView
             android:id="@+id/textView5"
@@ -196,45 +283,69 @@
             app:layout_constraintBottom_toTopOf="@+id/view7"
             app:layout_constraintStart_toStartOf="@+id/view7" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName7"
+        <TextView
+            android:id="@+id/textView13"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:layout_marginBottom="12dp"
-            android:background="@null"
-            android:ems="10"
-            android:hint="На что пойдут деньги и как они кому-то помогут?"
-            android:inputType="textMultiLine"
-            android:minLines="2"
-            android:textAlignment="viewStart"
-            android:textColorHint="#818C99"
+            android:text="Счёт VK Pay · 1234"
+            android:textColor="#000000"
             android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@+id/view8"
-            app:layout_constraintEnd_toEndOf="@+id/view8"
-            app:layout_constraintStart_toStartOf="@+id/view8"
-            app:layout_constraintTop_toTopOf="@+id/view8" />
+            app:layout_constraintBottom_toBottomOf="@+id/view9"
+            app:layout_constraintEnd_toEndOf="@+id/view9"
+            app:layout_constraintStart_toStartOf="@+id/view9"
+            app:layout_constraintTop_toTopOf="@+id/view9" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName6"
+        <TextView
+            android:id="@+id/textView15"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:layout_marginBottom="12dp"
-            android:background="@null"
-            android:ems="10"
-            android:hint="Например, поддержка приюта"
-            android:textAlignment="viewStart"
-            android:textColorHint="#818C99"
+            android:text="Матвей Правосудов"
+            android:textColor="#000000"
             android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@+id/view7"
-            app:layout_constraintEnd_toEndOf="@+id/view7"
-            app:layout_constraintStart_toStartOf="@+id/view7"
-            app:layout_constraintTop_toTopOf="@+id/view7" />
+            app:layout_constraintBottom_toBottomOf="@+id/view10"
+            app:layout_constraintEnd_toEndOf="@+id/view10"
+            app:layout_constraintStart_toStartOf="@+id/view10"
+            app:layout_constraintTop_toTopOf="@+id/view10" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view9"
+            app:layout_constraintEnd_toEndOf="@+id/view9"
+            app:layout_constraintTop_toTopOf="@+id/view9"
+            app:srcCompat="@drawable/ic_arrow_bottom" />
+
+        <Button
+            android:id="@+id/MainButton"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/blue_button"
+            android:onClick="startCharity"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/MainButton"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view10" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
