@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">VezdehodCharity</string>
+    <string name="MainHeader">Пожертвования</string>
+    <string name="MainCaption">У вас пока нет сборов\nНачните доброе дело</string>
+    <string name="MainButton">Создать сбор</string>
+    <string name="CharityTypeHeader">Тип сбора</string>
+    <string name="back">Back</string>
+    <string name="CharityTargetText">Целевой сбор</string>
+    <string name="CharityTypeTargetCaption">Когда есть определённая цель</string>
+    <string name="CharityTypeRegularTypeHeader">Регулярный сбор</string>
+    <string name="CharityTypeRegularTypeCaption">Если помощь нужна ежемесячно</string>
+    <string name="TargetImgDescription">target</string>
+    <string name="RegularImageDescription">Regular</string>
+    <string name="ProceedImageDescription">Proceed</string>
+</resources>
