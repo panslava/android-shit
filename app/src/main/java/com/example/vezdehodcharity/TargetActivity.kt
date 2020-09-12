@@ -15,25 +15,12 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_regular.*
 
 
-class RegularActivity : AppCompatActivity() {
+class TargetActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_regular)
+        setContentView(R.layout.activity_target)
 
-        val moneyText = findViewById<EditText>(R.id.editTextMoney)
-        imageView10.setOnClickListener{onImageSelectorClick()}
-        moneyText.addTextChangedListener(object : TextWatcher {
-            override fun afterTextChanged(s: Editable?) {
-            }
-
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-            }
-
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-
-            }
-        })
     }
 
     companion object {
@@ -67,7 +54,7 @@ class RegularActivity : AppCompatActivity() {
             launchImagePicker();
         }
     }
-    
+
     fun onRemoveImageClick(view: View) {
         imageView10.setImageDrawable(null)
         textView7.visibility = View.VISIBLE
