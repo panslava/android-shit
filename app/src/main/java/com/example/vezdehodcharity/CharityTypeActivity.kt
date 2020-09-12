@@ -22,4 +22,9 @@ class CharityTypeActivity : AppCompatActivity() {
         val intent = Intent(this, RegularActivity::class.java)
         startActivity(intent)
     }
+
+    fun toGoal(view: View) {
+        var intent = Intent(this, AppFrameActivity::class.java)
+        startActivity(intent);
+    }
 }
