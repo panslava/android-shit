@@ -23,8 +23,8 @@ class CharityTypeActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun toGoal(view: View) {
-        var intent = Intent(this, AppFrameActivity::class.java)
+    fun toTarget(view: View) {
+        var intent = Intent(this, TargetActivity::class.java)
         startActivity(intent);
     }
 }

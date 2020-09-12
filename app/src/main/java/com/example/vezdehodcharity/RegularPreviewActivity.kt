@@ -16,11 +16,8 @@ class RegularPreviewActivity : AppCompatActivity() {
     }
 
     fun onSubmitClick(view: View) {
-        if (editTextTextPersonName.text.isNotEmpty() && editTextMoney.text.isNotEmpty() && editTextTextPersonName6.text.isNotEmpty() &&
-            editTextDescription.text.isNotEmpty()) {
-            val intent = Intent(this, CharityTypeActivity::class.java)
-            startActivity(intent)
-        }
+        val intent = Intent(this, AppFrameActivity::class.java)
+        startActivity(intent)
     }
 
 

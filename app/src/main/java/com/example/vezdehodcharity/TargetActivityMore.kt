@@ -19,17 +19,14 @@ class TargetActivityMore : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_regular)
+        setContentView(R.layout.activity_target_more)
 
         val moneyText = findViewById<EditText>(R.id.editTextMoney)
     }
 
     fun onSubmitClick(view: View) {
-        if (editTextTextPersonName.text.isNotEmpty() && editTextMoney.text.isNotEmpty() && editTextTextPersonName6.text.isNotEmpty() &&
-            editTextDescription.text.isNotEmpty()) {
-            val intent = Intent(this, RegularPreviewActivity::class.java)
-            startActivity(intent)
-        }
+        val intent = Intent(this, RegularPreviewActivity::class.java)
+        startActivity(intent)
     }
 
     fun back(view: View) {

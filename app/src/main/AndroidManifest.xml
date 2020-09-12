@@ -19,6 +19,9 @@
         </activity>
         <activity android:name=".CharityTypeActivity" />
         <activity android:name=".RegularActivity" />
+        <activity android:name=".RegularPreviewActivity" />
+        <activity android:name=".TargetActivity" />
+        <activity android:name=".TargetActivityMore" />
     </application>
 
 </manifest>

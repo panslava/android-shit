@@ -20,7 +20,7 @@ class TargetActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_target)
-
+        imageView10.setOnClickListener{onImageSelectorClick()}
     }
 
     companion object {
@@ -69,7 +69,7 @@ class TargetActivity : AppCompatActivity() {
     fun onSubmitClick(view: View) {
         if (editTextTextPersonName.text.isNotEmpty() && editTextMoney.text.isNotEmpty() && editTextTextPersonName6.text.isNotEmpty() &&
             editTextDescription.text.isNotEmpty()) {
-            val intent = Intent(this, RegularPreviewActivity::class.java)
+            val intent = Intent(this, TargetActivityMore::class.java)
             startActivity(intent)
         }
     }

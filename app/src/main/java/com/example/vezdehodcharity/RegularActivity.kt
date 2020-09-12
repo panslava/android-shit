@@ -87,25 +87,6 @@ class RegularActivity : AppCompatActivity() {
         }
     }
 
-    fun getRoundedCornerImage(bitmap: Bitmap): Bitmap? {
-        val output = Bitmap.createBitmap(
-            bitmap.width,
-            bitmap.height, Bitmap.Config.ARGB_8888
-        )
-        val canvas = Canvas(output)
-        val color = -0xbdbdbe
-        val paint = Paint()
-        val rect = Rect(0, 0, bitmap.width, bitmap.height)
-        val rectF = RectF(rect)
-        val roundPx = 100f
-        paint.setAntiAlias(true)
-        canvas.drawARGB(0, 0, 0, 0)
-        paint.setColor(color)
-        canvas.drawRoundRect(rectF, roundPx, roundPx, paint)
-        paint.setXfermode(PorterDuffXfermode(PorterDuff.Mode.SRC_IN))
-        canvas.drawBitmap(bitmap, rect, rect, paint)
-        return output
-    }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
